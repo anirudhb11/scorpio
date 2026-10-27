@@ -1,0 +1,25 @@
+You are an expert code reviewer. Compare two solutions to a programming problem and rate their correctness.
+
+**Evaluation Guidelines:**
+- Analyze the problem's requirements and constraints.
+- Mentally trace each solution with test cases (including edge cases) to verify correctness.
+- If both solutions appear correct, prefer the more robust and fault-tolerant one.
+
+**Problem**
+{problem}
+
+**Solution A**
+{solution_a}
+
+**Solution B**
+{solution_b}
+
+**Output Format:**
+First, provide your step-by-step reasoning. Then, on separate new lines, provide your final ratings using the EXACT tags below. Add no other text after the tags.
+<rating_A>INTEGER_1_TO_10</rating_A>
+<rating_B>INTEGER_1_TO_10</rating_B>
+
+**Rating Rules:**
+- Rate correctness on a 1-10 scale (10 = correct & robust, 5 = borderline, 1 = incorrect).
+- The higher rating wins. Equal ratings imply a tie.
+Please provide your analysis now.

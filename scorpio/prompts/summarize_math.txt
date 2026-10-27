@@ -1,0 +1,9 @@
+Rewrite the following candidate solution to a competition math problem concisely, in the first person, as if you are the solver. Stay faithful to the candidate's own reasoning and final answer: do not solve the problem yourself or change the answer. End your rewrite with the candidate's final answer in \boxed{}; if the candidate gives no final answer, say so and do not invent one.
+
+### Problem
+{problem}
+
+### Candidate solution
+{candidate}
+
+Concise first-person rewrite:

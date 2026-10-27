@@ -1,0 +1,20 @@
+You are an expert code reviewer. Rate the correctness of a solution to a programming problem.
+
+**Evaluation Guidelines:**
+- Analyze the problem's requirements and constraints.
+- Mentally trace the solution with test cases (including edge cases) to verify correctness.
+- Give a higher score if the solution is robust and fault-tolerant.
+
+**Problem**
+{problem}
+
+**Solution**
+{candidate}
+
+**Output Format:**
+First, provide your step-by-step reasoning. Then, on a new line, provide your final rating using the EXACT tags below. Add no other text after the tags.
+<rating>INTEGER_1_TO_10</rating>
+
+**Rating Rules:**
+- Rate correctness on a 1-10 scale (10 = correct & robust, 5 = borderline, 1 = incorrect).
+Please provide your analysis now.

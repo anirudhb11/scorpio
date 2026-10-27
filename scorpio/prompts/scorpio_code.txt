@@ -1,0 +1,20 @@
+You are an expert code reviewer. Compare {k} solutions to a programming problem and rate their correctness.
+
+**Evaluation Guidelines:**
+- Analyze the problem's requirements and constraints.
+- Mentally trace each solution with test cases (including edge cases) to verify correctness.
+- If multiple solutions appear correct, prefer the more robust and fault-tolerant ones.
+
+**Problem**
+{problem}
+
+{solutions}
+
+**Output Format:**
+First, compare and contrast the solutions provided in context. Then provide your step-by-step reasoning following the evaluation guidelines above. Then, on separate new lines, provide your final ratings using the EXACT tags below.
+{rating_lines}
+
+**Rating Rules:**
+- Rate correctness on a 1-10 scale (10 = correct & robust, 5 = borderline, 1 = incorrect).
+- Higher rating wins. Equal ratings imply ties.
+Please provide your analysis now.

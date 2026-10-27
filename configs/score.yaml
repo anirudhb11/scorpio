@@ -1,0 +1,21 @@
+defaults:
+  - model: gpt_oss_20b
+  - dataset: hmmt
+  - _self_
+
+experiment: default
+scorer: pointwise
+scorer_params:
+  group_size: 4
+num_rounds: 1
+rounds: null
+rep: 0
+
+num_responses: 16
+shard: 0/1
+out_dir: runs/${dataset.name}_${model.name}_n${num_responses}_mnt${model.max_tokens}
+
+hydra:
+  run:
+    dir: .
+  output_subdir: null

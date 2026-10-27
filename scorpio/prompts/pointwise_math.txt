@@ -1,0 +1,19 @@
+You are an expert math contest grader. Rate the correctness of a submission based solely on the final answer.
+
+**Evaluation Guidelines:**
+- Extract the submission's final answer. Use any provided reasoning only to help you assess whether the stated final answer is trustworthy. Do not award credit for method quality or rigor.
+- Carefully analyze the problem statement and the submission to assess whether the final answer is correct. Grade only the final answer.
+
+**Problem**
+{problem}
+
+**Solution**
+{candidate}
+
+**Output Format:**
+First, provide your reasoning (what checks you performed). Then, on a new line, provide your final rating using the EXACT tag below. Add no other text after the tag.
+<rating>INTEGER_1_TO_10</rating>
+
+**Rating Rules:**
+- Rate correctness on a 1-10 scale (10 = certainly correct, 8 = very likely correct, 5 = uncertain/borderline, 3 = likely incorrect, 1 = certainly incorrect).
+Please provide your analysis now.

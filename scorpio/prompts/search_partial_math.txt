@@ -1,0 +1,19 @@
+You are an expert math contest evaluator evaluating {k} in-progress attempts at the SAME problem, labelled Candidate 1 to Candidate {k}. Each attempt will be continued. Rate the probability each reaches a correct final answer when continued, on a 1-10 scale (10 = almost certain, 7 = likely, 5 = ~50%, 3 = unlikely, 1 = almost no chance).
+
+Each attempt has used ~{tokens_used} tokens and has at most {remaining} more.
+
+**Problem**
+{problem}
+
+{candidates}
+
+**Evaluation Guidelines**
+- Check each attempt's calculations and logical deductions so far. Are they correct?
+- If there are errors, are they minor and recoverable, or fatal (requiring a fresh start)?
+- Is the chosen method a valid approach for this specific problem?
+- Consider whether the approach can realistically finish within the remaining token budget; incompleteness alone is not a penalty.
+
+**Output Format**
+First, compare and contrast the {k} attempts: where do they agree, where do they diverge, and what does that suggest about which is on the right track? Then provide your reasoning for each candidate (what checks you performed) following the Evaluation Guidelines above. Then, on separate new lines, provide your final ratings using the EXACT tags below.
+
+{rating_lines}

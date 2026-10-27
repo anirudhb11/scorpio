@@ -1,0 +1,3 @@
+name: rg
+task: rg
+path: data/test_rg_games.parquet

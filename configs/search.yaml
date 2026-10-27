@@ -1,0 +1,40 @@
+defaults:
+  - model: gpt_oss_20b
+  - dataset: hmmt
+  - _self_
+
+num_responses: 16
+
+search:
+  critic: scorpio
+  critic_tag: k${search.group_size}_r${search.num_rounds}
+  max_depth: 4
+  num_tokens_in_each_step: 2048
+  max_tokens_in_solution: 64000
+  prune_percentile: 25
+  group_size: 4
+  num_rounds: 4
+  seed: 42
+
+# Only read when `search.critic` is not the policy itself.
+critic:
+  path: launch/ThinkPRM-1.5B
+  max_tokens: 32000
+  temperature: 0.4
+  decision_temperature: 1.0
+  policy_mem_fraction: 0.5
+  serve_args:
+    - --mem-fraction-static
+    - "0.35"
+    - --context-length
+    - "122000"
+
+experiment: default
+rep: 0
+shard: 0/1
+out_dir: runs/search_${search.critic}_${search.critic_tag}_${dataset.name}_${model.name}_n${num_responses}_d${search.max_depth}_s${search.num_tokens_in_each_step}_pct${search.prune_percentile}_seed${search.seed}_mnt${model.max_tokens}
+
+hydra:
+  run:
+    dir: .
+  output_subdir: null
