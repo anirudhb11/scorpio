@@ -21,6 +21,9 @@ python -m scorpio.cli.report dataset=hmmt scorer=scorpio               # accurac
 
 The default model is gpt-oss-20b; add `model=qwen3_5_4b` to every command for Qwen3.5-4B.
 
+These commands process the whole dataset on one GPU. To split it into shards
+across GPUs or jobs, see [Running commands using Slurm](#running-commands-using-slurm).
+
 ## Bias-variance plots
 
 Score each scorer over at least two reps, then report and plot:
