@@ -1,0 +1,3 @@
+name: hmmt
+task: math
+path: data/hmmt_feb_2025.parquet

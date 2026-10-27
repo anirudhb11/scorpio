@@ -1,0 +1,11 @@
+You are given a programming problem and a proposed step-by-step solution:
+
+[Programming Problem]
+
+{problem}
+
+[Solution]
+
+{solution}
+
+Review and critique each step in the proposed solution to determine whether each step is correct. If the solution is incomplete, only verify the provided steps.

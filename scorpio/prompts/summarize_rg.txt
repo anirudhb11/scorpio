@@ -1,0 +1,9 @@
+Rewrite the following candidate solution to a reasoning puzzle concisely, in the first person, as if you are the solver. Stay faithful to the candidate's own reasoning and final answer: do not solve the problem yourself or change the answer. End your rewrite with the candidate's final answer between <answer> and </answer>. The <answer></answer> tags are REQUIRED: always wrap the final answer in them, even a short one-word answer like 'No'. If the candidate gives no final answer, output an empty <answer></answer> and do not invent one.
+
+### Problem
+{problem}
+
+### Candidate solution
+{candidate}
+
+Concise first-person rewrite:

@@ -1,0 +1,23 @@
+name: Qwen3.5-4B
+path: Qwen/Qwen3.5-4B
+
+serve_args:
+  - --mem-fraction-static
+  - "0.75"
+
+max_tokens: 64000
+
+sampling:
+  temperature: 1.0
+  top_p: 0.95
+  top_k: 20
+  presence_penalty: 1.5
+  enable_thinking: false
+  separate_reasoning: false
+
+post_processor: summarize
+
+# USD per million tokens.
+prices:
+  input: 0.20
+  output: 0.20

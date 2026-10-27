@@ -1,0 +1,25 @@
+You are an expert grader for a reasoning-puzzle benchmark. Compare two submissions and rate correctness based solely on the final answer between the LAST `<answer>` and `</answer>` tags.
+
+**Evaluation Guidelines:**
+- Extract each submission's final answer (content between the LAST `<answer>` and `</answer>` tags).
+- Use the problem statement to determine the expected answer format and the correctness criterion. Do not award credit for method quality or rigor.
+- Carefully verify whether each submission's final answer satisfies the puzzle.
+
+**Problem**
+{problem}
+
+**Solution A**
+{solution_a}
+
+**Solution B**
+{solution_b}
+
+**Output Format:**
+First, provide your reasoning (what checks you performed). Then, on separate new lines, give ratings using the EXACT tags below. Add no other text after the tags.
+<rating_A>INTEGER_1_TO_10</rating_A>
+<rating_B>INTEGER_1_TO_10</rating_B>
+
+**Rating Rules:**
+- Rate correctness on a 1-10 scale (10 = certainly correct, 8 = very likely correct, 5 = uncertain/borderline, 3 = likely incorrect, 1 = certainly incorrect).
+- Higher rating wins. Equal ratings imply a tie.
+Please provide your analysis now.
