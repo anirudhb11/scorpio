@@ -103,7 +103,7 @@ If compute nodes have no internet, download the model on a login node first
 ```bibtex
 @article{buvanesh2026scorpio,
   title  = {On the Limits of Test-Time Compute for Self-Evaluation},
-  author = {Buvanesh, Anirudh and Rouissi, Khaled and Yun, Sujin and Obando-Ceron, Johan and Moss, Morgane M and Lavoie, Samuel and Noukhovitch, Michael and Charlin, Laurent and Courville, Aaron},
+  author = {Anirudh Buvanesh and Khaled Rouissi and Sujin Yun and Johan Obando-Ceron and Morgane M Moss and Samuel Lavoie and Michael Noukhovitch and Laurent Charlin and Aaron Courville},
   year   = {2026}
 }
 ```
